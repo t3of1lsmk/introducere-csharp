@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplu C#</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">C#</div>
+        <nav>
+          <a href="index.html">Acasa</a>
+          <a href="despre.html">Despre</a>
+          <a href="caracteristici.html">Caracteristici</a>
+          <a href="exemplu.html">>Exemplu</a>
+          <a href="aplicatii.html">Aplicatii</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="container page-content">
+        <div class="section-heading">
+          <span>Exemplu</span>
+          <h2>Primul program in C#</h2>
+        </div>
+
+        <div class="code-layout simple-grid">
+          <div>
+            <p class="code-description">
+              Scrie un cod C# simplu si apasa pe „Ruleaza” pentru a vedea ce se afiseaza in consola.
+            </p>
+            <ul class="beginner-notes">
+              <li><strong>using System;</strong> -> adauga functiile de baza.</li>
+              <li><strong>Console.WriteLine(...)</strong> -> afiseaza textul in consola.</li>
+              <li><strong>class Program</strong> -> defineste programul principal.</li>
+              <li><strong>Main()</strong> -> este punctul de pornire al programului.</li>
+            </ul>
+          </div>
+
+          <div class="editor-panel">
+            <label for="codeInput" class="editor-label">Cod C#</label>
+            <textarea id="codeInput" rows="12" spellcheck="false">using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello World!");
+    }
+}</textarea>
+
+            <div class="editor-actions">
+              <button id="runCodeBtn" class="btn primary" type="button">Ruleaza</button>
+              <button id="resetCodeBtn" class="btn secondary" type="button">Reseteaza</button>
+            </div>
+
+            <div class="output-box">
+              <div class="output-header">Iesire</div>
+              <pre id="outputArea">Apasa pe „Ruleaza” pentru a vedea rezultatul.</pre>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
